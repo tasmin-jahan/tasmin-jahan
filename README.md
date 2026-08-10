@@ -47,5 +47,5 @@
 <br/>
 
 <div align="center">
-  <sub>WIP is a permanent state, not a phase</sub>
+  <sub>Cuteness is requirement, not optional.</sub>
 </div>
