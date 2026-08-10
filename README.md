@@ -39,6 +39,9 @@
 ### Stack
 
 <!--STACK:START-->
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=py,bash" alt="stack" />
+</p>
 <!--STACK:END-->
 
 <br/>
