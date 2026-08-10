@@ -7,6 +7,20 @@
 ### Recently active
 
 <!--RECENT-REPOS:START-->
+<table>
+  <tr>
+    <td><a href="https://github.com/tasmin-jahan/tasmin-jahan"><b>tasmin-jahan</b></a><br/><sub>me me me</sub></td>
+    <td align="right"><sub>—</sub></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/tasmin-jahan/pearl"><b>pearl</b></a><br/><sub>Probabilistic Explainability with Adaptive Reliability via transfer Learning</sub></td>
+    <td align="right"><sub>Python</sub></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/tasmin-jahan/bangla-gsg"><b>bangla-gsg</b></a><br/><sub>GDN+SWA+GQA Hybrid Mini-LLM Trained on Bangla, English & Translation Corpus.</sub></td>
+    <td align="right"><sub>Jupyter Notebook</sub></td>
+  </tr>
+</table>
 <!--RECENT-REPOS:END-->
 
 <br/>
