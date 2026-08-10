@@ -1,0 +1,77 @@
+<svg width="900" height="220" viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&amp;display=swap');
+      .bg { fill: #12141a; }
+      .prompt { fill: #ff4fc3; }
+      .path { fill: #00c8ff; }
+      .name-hollow { font-family: 'JetBrains Mono', monospace; font-weight: 800; font-size: 34px; fill: none; stroke: #ff4fc3; stroke-width: 1px; }
+      .role { font-family: 'JetBrains Mono', monospace; font-size: 15px; fill: #7a8499; }
+      .comment { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #6b7280; }
+      .cursor { fill: #ff4fc3; }
+      .dot { fill: #ff4d6d; }
+      .dot2 { fill: #ffb830; }
+      .dot3 { fill: #ff4fc3; }
+      .star { fill: none; stroke: #ff4fc3; stroke-width: 1px; stroke-linejoin: round; }
+
+      #sweep { animation: sweep 5s ease-in-out infinite; }
+      @keyframes sweep {
+        0%   { transform: translateX(-260px); }
+        100% { transform: translateX(900px); }
+      }
+
+      .starfade { animation: starfade 5s ease-in-out infinite; }
+      @keyframes starfade {
+        0%, 100% { opacity: 0.1; }
+        50% { opacity: 0.55; }
+      }
+    </style>
+    <linearGradient id="glowgrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff4fc3" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#ff4fc3" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#ff4fc3" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="cardclip">
+      <rect width="900" height="220" rx="14"/>
+    </clipPath>
+  </defs>
+
+  <rect class="bg" width="900" height="220" rx="14"/>
+  <rect width="899" height="219" x="0.5" y="0.5" rx="14" fill="none" stroke="#222730"/>
+
+  <g clip-path="url(#cardclip)">
+    <g id="starrow">
+      <polygon class="star starfade" style="animation-delay:0.0s" points="690.0,67.0 692.4,72.8 698.6,73.2 693.8,77.2 695.3,83.3 690.0,80.0 684.7,83.3 686.2,77.2 681.4,73.2 687.6,72.8"/>
+      <polygon class="star starfade" style="animation-delay:0.3s" points="730.0,52.0 732.4,57.8 738.6,58.2 733.8,62.2 735.3,68.3 730.0,65.0 724.7,68.3 726.2,62.2 721.4,58.2 727.6,57.8"/>
+      <polygon class="star starfade" style="animation-delay:0.7s" points="770.0,77.0 772.4,82.8 778.6,83.2 773.8,87.2 775.3,93.3 770.0,90.0 764.7,93.3 766.2,87.2 761.4,83.2 767.6,82.8"/>
+      <polygon class="star starfade" style="animation-delay:1.0s" points="720.0,97.0 722.4,102.8 728.6,103.2 723.8,107.2 725.3,113.3 720.0,110.0 714.7,113.3 716.2,107.2 711.4,103.2 717.6,102.8"/>
+      <polygon class="star starfade" style="animation-delay:1.4s" points="810.0,57.0 812.4,62.8 818.6,63.2 813.8,67.2 815.3,73.3 810.0,70.0 804.7,73.3 806.2,67.2 801.4,63.2 807.6,62.8"/>
+      <polygon class="star starfade" style="animation-delay:1.8s" points="850.0,87.0 852.4,92.8 858.6,93.2 853.8,97.2 855.3,103.3 850.0,100.0 844.7,103.3 846.2,97.2 841.4,93.2 847.6,92.8"/>
+      <polygon class="star starfade" style="animation-delay:2.1s" points="800.0,127.0 802.4,132.8 808.6,133.2 803.8,137.2 805.3,143.3 800.0,140.0 794.7,143.3 796.2,137.2 791.4,133.2 797.6,132.8"/>
+      <polygon class="star starfade" style="animation-delay:2.4s" points="750.0,147.0 752.4,152.8 758.6,153.2 753.8,157.2 755.3,163.3 750.0,160.0 744.7,163.3 746.2,157.2 741.4,153.2 747.6,152.8"/>
+      <polygon class="star starfade" style="animation-delay:2.8s" points="690.0,157.0 692.4,162.8 698.6,163.2 693.8,167.2 695.3,173.3 690.0,170.0 684.7,173.3 686.2,167.2 681.4,163.2 687.6,162.8"/>
+      <polygon class="star starfade" style="animation-delay:3.1s" points="860.0,142.0 862.4,147.8 868.6,148.2 863.8,152.2 865.3,158.3 860.0,155.0 854.7,158.3 856.2,152.2 851.4,148.2 857.6,147.8"/>
+      <polygon class="star starfade" style="animation-delay:3.5s" points="660.0,107.0 662.4,112.8 668.6,113.2 663.8,117.2 665.3,123.3 660.0,120.0 654.7,123.3 656.2,117.2 651.4,113.2 657.6,112.8"/>
+      <polygon class="star starfade" style="animation-delay:3.8s" points="830.0,172.0 832.4,177.8 838.6,178.2 833.8,182.2 835.3,188.3 830.0,185.0 824.7,188.3 826.2,182.2 821.4,178.2 827.6,177.8"/>
+    </g>
+    <rect id="sweep" y="0" width="260" height="220" fill="url(#glowgrad)"/>
+  </g>
+
+  <rect x="0" y="0" width="900" height="36" rx="14" fill="#111318"/>
+  <rect x="0" y="22" width="900" height="14" fill="#111318"/>
+  <circle class="dot" cx="26" cy="18" r="5"/>
+  <circle class="dot2" cx="44" cy="18" r="5"/>
+  <circle class="dot3" cx="62" cy="18" r="5"/>
+  <text x="450" y="23" text-anchor="middle" class="comment">~/tasmin-jahan — zsh</text>
+
+  <text x="40" y="80" class="comment">$ whoami</text>
+
+  <text x="40" y="118">
+    <tspan class="prompt">&gt;</tspan>
+    <tspan class="name-hollow" dx="14">Tasmin Jahan</tspan>
+  </text>
+
+  <text x="54" y="150" class="role">building things with a little more color, half <tspan class="path">logic</tspan>, half <tspan class="prompt">glitter</tspan></text>
+
+  <text x="40" y="188" class="comment">$ <tspan class="cursor">▊</tspan></text>
+</svg>

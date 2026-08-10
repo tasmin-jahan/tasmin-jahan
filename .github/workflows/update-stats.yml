@@ -1,0 +1,50 @@
+name: Update stat cards
+
+on:
+  schedule:
+    - cron: "0 5 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: stats
+          options: username=tasmin-jahan&show_icons=true&count_private=true&hide_border=true&bg_color=12141a&title_color=ff4fc3&icon_color=00c8ff&text_color=e8edf5&ring_color=ff4fc3
+          path: assets/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: stats-organization/github-readme-stats-action@v2
+        with:
+          card: top-langs
+          options: username=tasmin-jahan&layout=compact&hide_border=true&bg_color=12141a&title_color=ff4fc3&text_color=e8edf5&hide=jupyter%20notebook
+          path: assets/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Bust GitHub's image cache with a version tag
+        run: |
+          TS=$(date +%s)
+          sed -i -E "s#(assets/stats\.svg)(\?v=[0-9]+)?#\1?v=${TS}#" README.md
+          sed -i -E "s#(assets/top-langs\.svg)(\?v=[0-9]+)?#\1?v=${TS}#" README.md
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/top-langs.svg README.md
+          git diff --staged --quiet || git commit -m "chore: update stat cards"
+          git pull --rebase origin main
+          git push
