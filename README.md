@@ -7,6 +7,12 @@
 ### Recently active
 
 <!--RECENT-REPOS:START-->
+<table>
+  <tr>
+    <td><a href="https://github.com/tasmin-jahan/bangla-gsg"><b>bangla-gsg</b></a><br/><sub>GDN+SWA+GQA Hybrid Mini-LLM Trained on Bangla, English & Translation Corpus.</sub></td>
+    <td align="right"><sub>Python</sub></td>
+  </tr>
+</table>
 <!--RECENT-REPOS:END-->
 
 <br/>
