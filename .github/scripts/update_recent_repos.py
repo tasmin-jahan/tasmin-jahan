@@ -26,7 +26,13 @@ def get_recent_repos():
     url = f"https://api.github.com/users/{USERNAME}/repos?sort=pushed&direction=desc&per_page=15"
     repos = api_get(url)
     repos = [r for r in repos if not r.get("fork")]
+    repos = [r for r in repos if r["name"].lower() != USERNAME.lower()]
     return repos[:COUNT]
+
+
+LANGUAGE_DISPLAY_OVERRIDES = {
+    "Jupyter Notebook": "Python",
+}
 
 
 def build_block(repos):
@@ -36,6 +42,7 @@ def build_block(repos):
         url = r["html_url"]
         desc = r.get("description") or "No description yet."
         lang = r.get("language") or "—"
+        lang = LANGUAGE_DISPLAY_OVERRIDES.get(lang, lang)
         lines.append("  <tr>")
         lines.append(f'    <td><a href="{url}"><b>{name}</b></a><br/><sub>{desc}</sub></td>')
         lines.append(f'    <td align="right"><sub>{lang}</sub></td>')
