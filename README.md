@@ -21,8 +21,8 @@
 
 <!--STATS-IMG:START-->
 <div align="center">
-  <img src="assets/stats.svg?v=1790330274" alt="GitHub stats" height="165" />
-  <img src="assets/top-langs.svg?v=1790330274" alt="Top languages" height="165" />
+  <img src="assets/stats.svg?v=1790415597" alt="GitHub stats" height="165" />
+  <img src="assets/top-langs.svg?v=1790415597" alt="Top languages" height="165" />
 </div>
 <!--STATS-IMG:END-->
 
